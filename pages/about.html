@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="../src/styles/navigation.css" />
+    <link rel="stylesheet" href="../src/styles/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <a href="../index.html">
+          <img src="../src/imgs/weston-logo.png" alt="Logo" />
+        </a>
+      </div>
+      <div class="navbar-toggle" id="navbar-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar-menu" id="navbar-menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html" class="button">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-wrapper">
+      <header class="header">
+        <div class="header-content">
+          <h1>About Me.</h1>
+          <p>
+            I am a Web Developer located in Wisconsin. I have a passion for Web
+            Development and creating things from scratch! I would love to handle
+            your next project.
+          </p>
+        </div>
+        <img
+          src="../src/imgs/Kaleb_Weston.jpg"
+          alt="Image"
+          class="header-image"
+        />
+      </header>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content-section">
+      <h1>Take the Quiz</h1>
+      <p>Learn more about me by taking this 5 question quiz!</p>
+    </div>
+
+    <!-- Start Button -->
+    <div id="start-container" class="container-mid">
+      <button id="start-btn">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Section -->
+    <div id="quiz-section" class="container-mid hide">
+      <div id="question-container">
+        <!-- Questions and Options will be put here -->
+      </div>
+      <div id="timer-container" class="hide">
+        <div id="timer" class="time-left">10</div>
+      </div>
+      <div id="score-container" class="score-container hide">
+        <h2>Your Score: <span id="score">0</span></h2>
+      </div>
+    </div>
+
+    <script src="../src/scripts/about-quiz.js"></script>
+    <script type="module" src="../src/scripts/script.js"></script>
+  </body>
+</html>

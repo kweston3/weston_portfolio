@@ -38,7 +38,9 @@ body {
 
 .header img {
   width: 350px;
+  min-height: 250px;
   border-radius: 25px;
+  object-fit: cover;
 }
 
 .header-content {
@@ -58,6 +60,16 @@ body {
   margin-top: 10px;
   margin-bottom: 30px;
   font-size: 24px;
+}
+
+.header-content button {
+  color: #7e8ef1;
+  background-color: white;
+  font-size: 21px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -109,16 +121,13 @@ body {
 /* Responsive adjustments */
 @media (max-width: 900px) {
   .main-grid-container {
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); /* 2 equal-width columns on smaller screens */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 600px) {
   .main-grid-container {
-    grid-template-columns: 1fr; /* 1 column on very small screens */
+    grid-template-columns: 1fr;
   }
 }
 
@@ -174,4 +183,85 @@ body {
 /* Grid Item Hover Effect */
 .main-grid-item:hover::before {
   background: rgba(0, 0, 0, 0.7); /* Darker overlay on hover */
+}
+
+/* About Quiz Styles */
+#start-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+#start-btn {
+  background-color: #7e8ef1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#start-btn:hover {
+  background-color: #5a6dd7;
+}
+
+/* Quiz Styles */
+#quiz-section {
+  max-width: 1225px;
+  width: 100%;
+  padding: 20px;
+  text-align: left;
+}
+
+#question-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #7e8ef1;
+}
+
+.option-div {
+  margin: 10px;
+  margin-left: 0px;
+  padding: 10px;
+  color: white;
+  background-color: #ddd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.option-div.correct {
+  background-color: #7e8ef1; /* Green for correct */
+}
+
+.option-div.incorrect {
+  background-color: #f44336; /* Red for incorrect */
+}
+
+/* Timer Styles */
+#timer {
+  font-size: 20px;
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: #f0f0f0; /* Light grey background for the box */
+  border-radius: 5px; /* Rounded corners */
+  border: 2px solid #7e8ef1; /* Border color matching the theme */
+  color: #7e8ef1; /* Text color matching the theme */
+  display: inline-block; /* Make the box size fit the content */
+}
+
+.time-left {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.score-container {
+  text-align: center;
+}
+
+.hide {
+  display: none;
 }
