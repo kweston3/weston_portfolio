@@ -11,30 +11,28 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  height: 100px;
+  height: 120px;
 }
 
 /* Navbar Logo Styles */
 .navbar-logo {
   display: flex;
   align-items: center;
-  margin: 10px 25px;
+  margin-left: 30px;
 }
 
 .navbar-logo img {
-  height: 60px; /* Adjust logo height as needed */
+  height: 90px; /* Adjust logo height as needed */
 }
 
 /* Navbar Menu Styles */
 .navbar-menu {
   list-style-type: none;
   display: flex;
-  margin: 0;
-  padding: 0;
   justify-content: flex-end; /* Align items to the right */
   align-items: center; /* Center items vertically */
   flex: 1; /* Allow the menu to take up available space */
-  margin-left: auto; /* Push the items to the right */
+  margin-right: 30px;
 }
 
 .navbar-menu li {
@@ -49,20 +47,20 @@
 }
 
 .navbar-menu a:hover {
-  color: #007bff; /* Blue color on hover */
+  color: #7e8ef1; /* Blue color on hover */
 }
 
 /* Active Page Link */
 .navbar-menu a.active {
-  color: #007bff; /* Blue color for the active page link */
-  border-bottom: 2px solid #007bff; /* Add a blue underline to highlight the active link */
+  color: #7e8ef1; /* Blue color for the active page link */
+  border-bottom: 2px solid #7e8ef1; /* Add a blue underline to highlight the active link */
 }
 
 /* Button Styles */
 .navbar-menu .button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007bff; /* Blue background color */
+  background-color: #7e8ef1; /* Blue background color */
   color: white; /* White text color */
   border-radius: 5px; /* Rounded corners */
   font-weight: bold;
@@ -71,8 +69,8 @@
 }
 
 .navbar-menu .button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-  color: #e0e0e0; /* Light grey text color on hover */
+  background-color: #e0e0e0;
+  color: #7e8ef1; /* Light grey text color on hover */
 }
 
 /* Hamburger Icon Styles */
