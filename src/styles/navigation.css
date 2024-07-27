@@ -22,7 +22,7 @@
 }
 
 .navbar-logo img {
-  height: 90px;
+  height: 100px;
 }
 
 /* Navbar Menu Styles */
@@ -93,19 +93,24 @@
 @media screen and (max-width: 768px) {
   .navbar-menu {
     display: none;
+  }
+
+  .navbar-menu.active {
+    padding: 0;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     background-color: #f0f0f0;
     position: absolute;
     top: 100px;
     left: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    justify-content: center;
-    align-items: center;
   }
 
-  .navbar-menu.active {
-    display: flex;
+  .navbar-menu li {
+    margin: 20px;
   }
 
   .navbar-toggle {
