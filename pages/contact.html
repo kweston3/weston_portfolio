@@ -30,64 +30,54 @@
       </ul>
     </nav>
 
-    <div class="header-wrapper">
-      <header class="header">
-        <div class="header-content">
-          <h1>Get in touch.</h1>
-          <p>
-            If you would like to start a project, fill out the form below and I
-            will be in contact shortly with you!
-          </p>
-        </div>
-        <img
-          src="../src/imgs/Kaleb_Weston.jpg"
-          alt="Image"
-          class="header-image"
-        />
-      </header>
-    </div>
-
-    <!-- New Content Section -->
-    <div class="content-section">
-      <h1>Contact Me</h1>
-      <p>Reach out to me if you would like to start a web project!</p>
-      <p>Email: kalebweston23@gmail.com</p>
-      <p>
-        <a
-          href="https://www.linkedin.com/in/kaleb-weston-290736240/"
-          target="_blank"
-          >LinkedIn</a
+    <main>
+      <!-- New Content Section -->
+      <div class="content-section contact">
+        <h1>Contact me</h1>
+        <p>
+          If you would like to start a project, fill out the form below and I
+          will be in contact shortly with you!
+        </p>
+        <p>Email: kalebweston23@gmail.com</p>
+        <p>
+          <a
+            href="https://www.linkedin.com/in/kaleb-weston-290736240/"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </p>
+        <br />
+        <form
+          name="contact"
+          action="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
         >
-      </p>
-      <br />
-      <form
-        name="contact"
-        action="POST"
-        data-netlify="true"
-        netlify-honeypot="bot-field"
-      >
-        <input type="hidden" name="form-name" value="contact" />
-        <p hidden>
-          <label
-            >Don’t fill this out if you're human: <input name="bot-field"
-          /></label>
-        </p>
-        <p>
-          <label>Your Name: <input type="text" name="name" required /></label>
-        </p>
-        <p>
-          <label
-            >Your Email: <input type="email" name="email" required
-          /></label>
-        </p>
-        <p>
-          <label>Message: <textarea name="message" required></textarea></label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
-    </div>
+          <input type="hidden" name="form-name" value="contact" />
+          <p hidden>
+            <label
+              >Don’t fill this out if you're human: <input name="bot-field"
+            /></label>
+          </p>
+          <p>
+            <label>Your Name: <input type="text" name="name" required /></label>
+          </p>
+          <p>
+            <label
+              >Your Email: <input type="email" name="email" required
+            /></label>
+          </p>
+          <p>
+            <label
+              >Message: <textarea name="message" required></textarea>
+            </label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+      </div>
+    </main>
 
     <script type="module" src="../src/scripts/script.js"></script>
   </body>

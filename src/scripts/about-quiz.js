@@ -1,29 +1,39 @@
 document.addEventListener("DOMContentLoaded", () => {
   const questions = [
     {
-      question: "What is my favorite programming language?",
-      options: ["JavaScript", "Python", "Java", "C++"],
-      answer: 0,
+      question: "What is my favorite spot to vacation?",
+      options: ["Florida", "Arizona", "California", "Arkansas"],
+      answer: 1,
     },
     {
       question: "What is my favorite hobby?",
-      options: ["Hiking", "Reading", "Gaming", "Cooking"],
-      answer: 2,
+      options: ["Fishing", "Hiking", "Gaming", "Cooking"],
+      answer: 1,
     },
     {
-      question: "Which framework do I use the most?",
-      options: ["React", "Angular", "Vue", "Svelte"],
-      answer: 0,
+      question: "Who is my favorite NBA team?",
+      options: [
+        "Milwaukee Bucks",
+        "Los Angeles Lakers",
+        "Detroit Pistons",
+        "Miami Heat",
+      ],
+      answer: 3,
     },
     {
       question: "What is my favorite sport?",
       options: ["Basketball", "Soccer", "Football", "Baseball"],
-      answer: 1,
+      answer: 0,
     },
     {
       question: "Where did I go to college?",
-      options: ["MIT", "Harvard", "Stanford", "University of Wisconsin"],
-      answer: 3,
+      options: [
+        "University of Oshkosh",
+        "Harvard",
+        "Marian University",
+        "University of Wisconsin",
+      ],
+      answer: 2,
     },
   ];
 
