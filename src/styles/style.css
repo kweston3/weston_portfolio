@@ -38,7 +38,7 @@ body {
 
 .header img {
   width: 350px;
-  min-height: 250px;
+  min-height: 350px;
   border-radius: 25px;
   object-fit: cover;
 }
@@ -62,11 +62,14 @@ body {
   font-size: 24px;
 }
 
-.header-content button {
+.header-content .button {
+  display: inline-block;
   color: #7e8ef1;
   background-color: white;
+  border: none;
   font-size: 21px;
   font-weight: bold;
+  text-decoration: none;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
@@ -82,6 +85,14 @@ body {
   .header-content {
     margin-top: 75px;
     text-align: center;
+  }
+
+  .header-content .button {
+    margin-bottom: 25px;
+  }
+
+  .header img {
+    margin-bottom: 25px;
   }
 }
 
@@ -103,13 +114,18 @@ body {
 .content-section p {
   font-size: 18px;
   margin: 0;
+  margin-bottom: 10px;
+}
+
+.content-section a {
+  color: purple;
 }
 
 /* Grid Styles */
 .main-grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 20px;
   max-width: 1200px;
   width: 100%;
   padding: 10px;
@@ -268,7 +284,7 @@ body {
 
 /* Contact Form Styles */
 form {
-  max-width: 600px;
+  max-width: 1200px;
   margin: 20px auto;
   padding: 20px;
   border: 1px solid #ddd;
@@ -282,7 +298,7 @@ form p {
 
 form label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   color: #333;
 }
 
@@ -293,9 +309,12 @@ form textarea {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
 
 form button {
+  font-size: 16px;
   background-color: #7e8ef1;
   color: white;
   border: none;

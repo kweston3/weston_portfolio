@@ -1,3 +1,3 @@
-# Pro Sports History Project
+# Kaleb Weston Portfolio
 
-History on pro leagues such as Basketball, Football, Hockey, Soccer and more!
+My personal design portfolio that showcases different projects I have worked on.
