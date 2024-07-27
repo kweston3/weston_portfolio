@@ -28,47 +28,138 @@
       </ul>
     </nav>
 
-    <div class="header-wrapper">
-      <header class="header">
-        <div class="header-content">
-          <h1>About Me.</h1>
-          <p>
-            I am a Web Developer located in Wisconsin. I have a passion for Web
-            Development and creating things from scratch! I would love to handle
-            your next project.
-          </p>
+    <main>
+      <div class="header-wrapper">
+        <header class="header">
+          <div class="header-content">
+            <h1>About Me.</h1>
+            <p>
+              I am a Web Developer located in Wisconsin. I have a passion for
+              Web Development and creating things from scratch! I would love to
+              handle your next project.
+            </p>
+          </div>
+          <img
+            src="../src/imgs/Kaleb_Weston.jpg"
+            alt="Image"
+            class="header-image"
+          />
+        </header>
+      </div>
+
+      <div class="content-section">
+        <h1>My Resume</h1>
+        <p>
+          <a href="#">PDF</a>
+          <a
+            href="https://www.linkedin.com/in/kaleb-weston-290736240/"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </p>
+      </div>
+
+      <!-- Content Section -->
+      <div class="content-section resume">
+        <h2>Professional Summary:</h2>
+        <p>
+          Skilled web developer with a BBA in Marketing and Graphic Design,
+          specializing in creating user-friendly websites and compelling
+          graphics, with expertise in HTML, CSS, JavaScript, and Adobe Creative
+          Suite.
+        </p>
+      </div>
+
+      <div class="content-section resume">
+        <h2>Education:</h2>
+        <p>
+          Bachelor of Business Administration, Major: Marketing; Graphic Design
+        </p>
+        <p>Marian University, Fond du Lac, WI, May 2024</p>
+        <p>Honors: Magna Cum Laude - 3.8 GPA</p>
+      </div>
+
+      <div class="content-section resume">
+        <h2>Professional Experience:</h2>
+        <h3>Girbau North America – Oshkosh, WI</h3>
+        <p>September 2022 - Present</p>
+        <br />
+        <h3>Junior Web Designer</h3>
+        <p>May 2024 - Present</p>
+        <li>
+          Created visually appealing graphics for various marketing materials.
+        </li>
+        <li>
+          Designed and developed user-friendly and visually appealing web pages
+          and full sites.
+        </li>
+        <li>
+          Developed multimedia content, including infographics and interactive
+          elements.
+        </li>
+
+        <br />
+        <h3>Graphic & Web Design Intern</h3>
+        <p>September 2022 - April 2024</p>
+        <li>
+          Created visually appealing graphics for various marketing materials,
+          including social media, brochures, banners, presentations, etc.
+        </li>
+        <li>
+          Designed and developed user-friendly and visually appealing web pages
+          and full sites for GNA’s corporate website, sub-brands and customers.
+        </li>
+        <li>
+          Developed multimedia content, including infographics and interactive
+          elements.
+        </li>
+
+        <br />
+        <h3>Walsworth-Ripon</h3>
+        <p>May 2022 - August 2022</p>
+        <li>Read over work orders and preflighted jobs for print.</li>
+        <li>
+          Refined jobs for customers to print their job on the correct type of
+          paper.
+        </li>
+        <li>
+          Tasked to work on Graphic Design Projects including Walsworth’s “85th
+          Anniversary” Save the Date Card and Invitation Letter.
+        </li>
+      </div>
+      <br />
+      <div class="content-section resume">
+        <h2>Skills</h2>
+        <p>
+          Web Development: HTML, CSS, JavaScript, NodeJS, PostgreSQL Wordpress.
+        </p>
+        <p>Graphic Design: InDesign, Illustrator, Photoshop, After Effects</p>
+      </div>
+
+      <!-- Content Section -->
+      <div class="content-section">
+        <h1>Learn more</h1>
+        <p>Find out more about me by taking this 5 question quiz!</p>
+      </div>
+
+      <!-- Start Button -->
+      <div id="start-container" class="container-mid">
+        <button id="start-btn">Start Quiz</button>
+      </div>
+
+      <!-- Quiz Section -->
+      <div id="quiz-section" class="container-mid hide">
+        <div id="question-container">
+          <!-- Questions and Options will be put here -->
         </div>
-        <img
-          src="../src/imgs/Kaleb_Weston.jpg"
-          alt="Image"
-          class="header-image"
-        />
-      </header>
-    </div>
-
-    <!-- Content Section -->
-    <div class="content-section">
-      <h1>Take the Quiz</h1>
-      <p>Learn more about me by taking this 5 question quiz!</p>
-    </div>
-
-    <!-- Start Button -->
-    <div id="start-container" class="container-mid">
-      <button id="start-btn">Start Quiz</button>
-    </div>
-
-    <!-- Quiz Section -->
-    <div id="quiz-section" class="container-mid hide">
-      <div id="question-container">
-        <!-- Questions and Options will be put here -->
+        <div id="timer-container" class="hide">
+          <div id="timer" class="time-left">10</div>
+        </div>
+        <div id="score-container" class="score-container hide">
+          <h2>Your Score: <span id="score">0</span></h2>
+        </div>
       </div>
-      <div id="timer-container" class="hide">
-        <div id="timer" class="time-left">10</div>
-      </div>
-      <div id="score-container" class="score-container hide">
-        <h2>Your Score: <span id="score">0</span></h2>
-      </div>
-    </div>
+    </main>
 
     <script src="../src/scripts/about-quiz.js"></script>
     <script type="module" src="../src/scripts/script.js"></script>

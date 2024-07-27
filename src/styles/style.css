@@ -11,6 +11,14 @@ body {
   align-items: center;
 }
 
+main {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Header */
 .header-wrapper {
   width: 100%;
@@ -33,7 +41,6 @@ body {
   padding: 20px;
   gap: 20px;
   overflow: hidden;
-  margin-top: 100px;
 }
 
 .header img {
@@ -129,9 +136,10 @@ body {
   max-width: 1200px;
   width: 100%;
   padding: 10px;
-  margin-top: 25px;
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 25px;
 }
 
 /* Responsive adjustments */
@@ -282,7 +290,24 @@ body {
   display: none;
 }
 
+.resume {
+  margin-top: 0px;
+}
+
+.resume h2 {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 26px;
+}
+
 /* Contact Form Styles */
+.contact {
+  margin-top: 125px;
+}
+
+.contact a {
+  color: #7e8ef1;
+}
+
 form {
   max-width: 1200px;
   margin: 20px auto;
@@ -325,4 +350,51 @@ form button {
 
 form button:hover {
   background-color: #5a6dd7;
+}
+
+/* Projects Styling */
+.project-intro {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+.project-intro .text-content {
+  flex: 1;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.project-intro .text-content p {
+  margin-bottom: 20px;
+}
+
+.project-intro img {
+  flex: 1;
+  max-width: 400px;
+  height: auto;
+  min-height: 300px;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .project-intro {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-intro .text-content {
+    margin-right: 0;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .project-intro img {
+    max-width: 100%;
+    max-height: 400px;
+  }
 }
