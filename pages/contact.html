@@ -25,7 +25,7 @@
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="about.html">About</a></li>
         <li>
-          <a href="contact.html" class="button" class="active">Contact</a>
+          <a href="contact.html" class="button">Contact</a>
         </li>
       </ul>
     </nav>
@@ -51,7 +51,47 @@
     <div class="content-section">
       <h1>Contact Me</h1>
       <p>Reach out to me if you would like to start a web project!</p>
+      <form name="contact" method="POST" data-netlify="true" id="contact-form">
+        <input type="hidden" name="form-name" value="contact">
+        <p>
+          <label>Your Name: <input type="text" name="name" required /></label>
+        </p>
+        <p>
+          <label>Your Email: <input type="email" name="email" required /></label>
+        </p>
+        <p>
+          <label>Message: <textarea name="message" required></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+      <div id="success-message" style="display:none;">
+        <p>Thank you! Your message has been sent successfully.</p>
+      </div>
     </div>
+
+    <script>
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Simple client-side validation
+        var name = document.querySelector('input[name="name"]').value;
+        var email = document.querySelector('input[name="email"]').value;
+        var message = document.querySelector('textarea[name="message"]').value;
+
+        if (name && email && message) {
+          this.submit();
+          document.getElementById('success-message').style.display = 'block';
+          this.style.display = 'none';
+        } else {
+          alert('Please fill out all fields.');
+        }
+      });
+    </script>
+  </body>
+</html>
+
 
     <script type="module" src="src/scripts/script.js"></script>
   </body>
