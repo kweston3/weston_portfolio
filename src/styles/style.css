@@ -47,7 +47,7 @@ main {
   width: 350px;
   min-height: 350px;
   border-radius: 25px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .header-content {
@@ -90,7 +90,7 @@ main {
   }
 
   .header-content {
-    margin-top: 75px;
+    margin-top: 50px;
     text-align: center;
   }
 
@@ -301,7 +301,7 @@ main {
 
 /* Contact Form Styles */
 .contact {
-  margin-top: 125px;
+  margin-top: 60px;
 }
 
 .contact a {
