@@ -74,6 +74,12 @@
   color: #7e8ef1;
 }
 
+.navbar-menu a.active-contact {
+  background-color: #e0e0e0;
+  color: #7e8ef1;
+  border-bottom: 2px solid #7e8ef1;
+}
+
 /* Hamburger Icon Styles */
 .navbar-toggle {
   display: none;
