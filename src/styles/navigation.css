@@ -128,3 +128,47 @@
     display: flex;
   }
 }
+
+/* Dark Mode Navigation Styles */
+/* Dark Mode Toggle Button Styles */
+.dark-mode-toggle {
+  color: #7e8ef1;
+  border: 2px solid #7e8ef1;
+  border-radius: 5px;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #5a6dd7;
+}
+
+body.dark-mode .navbar {
+  background-color: #333333;
+  color: white;
+}
+
+body.dark-mode .navbar-menu a {
+  color: white;
+}
+
+body.dark-mode .navbar-menu a.active,
+body.dark-mode .navbar-menu a:hover {
+  color: #7e8ef1;
+}
+
+body.dark-mode .navbar-menu .button {
+  background-color: white;
+  color: #7e8ef1;
+}
+
+body.dark-mode .navbar-menu .button:hover {
+  background-color: #e0e0e0;
+  color: #7e8ef1;
+}
+
+body.dark-mode .navbar-toggle .bar {
+  background-color: white;
+}
