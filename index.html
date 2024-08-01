@@ -33,10 +33,7 @@
         <header class="header">
           <div class="header-content">
             <h1>Hi, my name is Kaleb Weston.</h1>
-            <p>
-              I build websites for business owners looking to grow their
-              companies.
-            </p>
+            <p>I am a Front-End Web Developer located in Lomira, Wisconsin.</p>
             <a href="pages/contact.html" class="button">Get in touch</a>
           </div>
           <img
@@ -50,7 +47,7 @@
       <!-- New Content Section -->
       <div class="content-section">
         <h1>Projects</h1>
-        <p>Check out my latest projects!</p>
+        <p>Check out my latest work. Websites, Logos, Animations and more!</p>
       </div>
 
       <div class="main-grid-container">
@@ -69,7 +66,7 @@
         <a href="https://movie-app-weston.netlify.app/" target="_blank">
           <div class="main-grid-item">
             <img src="src/imgs/movieapp-ss.png" alt="Movie App" />
-            <span>Movie App</span>
+            <span>Movie Ratings App</span>
           </div>
         </a>
         <a href="./pages/projects/read4life.html">
@@ -90,6 +87,61 @@
             <span>ExLC Logo Animation</span>
           </div>
         </a>
+      </div>
+
+      <div class="content-section">
+        <h1>About Me</h1>
+        <p>
+          I am a Web Developer located in Wisconsin. I have a passion for Web
+          Development and creating from scratch! I would love to handle your
+          next project. Reach out to me using the form below!
+        </p>
+      </div>
+
+      <div class="content-section contact">
+        <h1>Contact me</h1>
+        <p>
+          If you would like to start a project, fill out the form below and I
+          will be in contact shortly with you!
+        </p>
+        <p>Email: kalebweston23@gmail.com</p>
+        <p>
+          <a
+            href="https://www.linkedin.com/in/kaleb-weston-290736240/"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </p>
+        <br />
+        <form
+          name="contact"
+          action="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <p hidden>
+            <label
+              >Don’t fill this out if you're human: <input name="bot-field"
+            /></label>
+          </p>
+          <p>
+            <label>Your Name: <input type="text" name="name" required /></label>
+          </p>
+          <p>
+            <label
+              >Your Email: <input type="email" name="email" required
+            /></label>
+          </p>
+          <p>
+            <label
+              >Message: <textarea name="message" required></textarea>
+            </label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
       </div>
     </main>
     <script type="module" src="src/scripts/script.js"></script>
