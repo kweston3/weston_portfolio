@@ -52,7 +52,7 @@ main {
 
 .header-content {
   position: relative;
-  max-width: 600px;
+  max-width: 525px;
   width: 100%;
   z-index: 2;
   text-align: left;
@@ -250,7 +250,7 @@ main {
   margin-left: 0px;
   padding: 10px;
   color: white;
-  background-color: #ddd;
+  background-color: #afafaf;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -258,11 +258,11 @@ main {
 }
 
 .option-div.correct {
-  background-color: #7e8ef1; /* Green for correct */
+  background-color: #4caf50;
 }
 
 .option-div.incorrect {
-  background-color: #f44336; /* Red for incorrect */
+  background-color: #f44336;
 }
 
 /* Timer Styles */
@@ -270,11 +270,11 @@ main {
   font-size: 20px;
   margin: 20px 0;
   padding: 10px 20px;
-  background-color: #f0f0f0; /* Light grey background for the box */
-  border-radius: 5px; /* Rounded corners */
-  border: 2px solid #7e8ef1; /* Border color matching the theme */
-  color: #7e8ef1; /* Text color matching the theme */
-  display: inline-block; /* Make the box size fit the content */
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  border: 2px solid #7e8ef1;
+  color: #7e8ef1;
+  display: inline-block;
 }
 
 .time-left {
