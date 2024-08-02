@@ -2,20 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const modal = document.getElementById("contact-modal");
   const openModalBtn = document.querySelector(".header-content .open-modal");
   const closeBtn = document.querySelector(".modal .close-btn");
-  const darkModeLogo = document.getElementById("dark-mode-logo");
+  const darkModeToggle = document.getElementById("dark-mode-toggle");
   const body = document.body;
   const navbarToggle = document.getElementById("navbar-toggle");
   const navbarMenu = document.getElementById("navbar-menu");
-
-  // Log elements to check if they are correctly selected
-  console.log({
-    modal,
-    openModalBtn,
-    closeBtn,
-    darkModeLogo,
-    navbarToggle,
-    navbarMenu,
-  });
 
   // Show the modal
   if (openModalBtn) {
@@ -44,10 +34,12 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Toggle dark mode
-  if (darkModeLogo) {
-    darkModeLogo.addEventListener("click", (event) => {
+  if (darkModeToggle) {
+    darkModeToggle.addEventListener("click", (event) => {
       event.preventDefault(); // Prevent the default link behavior
       body.classList.toggle("dark-mode");
+      const toggleSwitch = darkModeToggle.querySelector(".toggle-switch");
+      toggleSwitch.classList.toggle("active");
     });
   }
 

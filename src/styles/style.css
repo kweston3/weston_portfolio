@@ -125,7 +125,8 @@ main {
 }
 
 .content-section a {
-  color: purple;
+  color: #7e8ef1;
+  margin-right: 5px;
 }
 
 /* Grid Styles */
@@ -200,13 +201,13 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Overlay color and transparency */
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
 /* Grid Item Hover Effect */
 .main-grid-item:hover::before {
-  background: rgba(0, 0, 0, 0.7); /* Darker overlay on hover */
+  background: rgba(0, 0, 0, 0.7);
 }
 
 /* About Quiz Styles */
@@ -419,6 +420,9 @@ form button:hover {
   border: 1px solid #888;
   width: 80%;
 }
+.modal-content a {
+  color: #7e8ef1;
+}
 
 .close-btn {
   color: #aaa;
@@ -446,9 +450,7 @@ body.dark-mode {
   color: #ffffff;
 }
 
-body.dark-mode .header-content .button,
-body.dark-mode form button,
-body.dark-mode #start-btn {
+body.dark-mode .header-content .button {
   background-color: #333333;
   color: #ffffff;
 }
@@ -460,10 +462,6 @@ body.dark-mode form {
 
 body.dark-mode form label {
   color: #ffffff;
-}
-
-body.dark-mode .main-grid-item::before {
-  background: rgba(0, 0, 0, 0.7);
 }
 
 body.dark-mode .option-div {
@@ -493,6 +491,22 @@ body.dark-mode .close-btn {
   color: #cccccc;
 }
 
+body.dark-mode .resume h2 {
+  color: #ffffff;
+}
+
 body.dark-mode .contact a {
   color: #7e8ef1;
+}
+
+body.dark-mode .main-grid-item {
+  color: black;
+}
+
+body.dark-mode .main-grid-item::before {
+  background: rgb(255, 255, 255, 0.7);
+}
+
+body.dark-mode .main-grid-item:hover::before {
+  background: rgb(255, 255, 255, 0.8);
 }

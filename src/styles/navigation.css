@@ -20,6 +20,7 @@
   display: flex;
   align-items: center;
   margin-left: 30px;
+  margin-right: 40px;
 }
 
 .navbar-logo img {
@@ -129,38 +130,93 @@
   }
 }
 
-/* Dark Mode Navigation Styles */
-/* Dark Mode Toggle Button Styles */
 .dark-mode-toggle {
-  color: #7e8ef1;
-  border: 2px solid #7e8ef1;
-  border-radius: 5px;
-  padding: 6px 12px;
-  font-size: 14px;
-  cursor: pointer;
-  margin-left: 25px;
+  background-color: transparent;
+  border: none;
 }
 
-.dark-mode-toggle:hover {
-  background-color: #5a6dd7;
+/* Toggle Switch */
+.toggle-switch {
+  width: 60px;
+  height: 30px;
+  background: #fff;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  box-sizing: border-box;
+  transition: background-color 0.3s;
+}
+
+.toggle-thumb {
+  width: 25px;
+  height: 25px;
+  background: #7e8ef1;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: left 0.3s, background-color 0.3s;
+}
+
+.toggle-thumb i {
+  position: absolute;
+  font-size: 16px;
+  color: #fff;
+}
+
+.toggle-thumb i.fa-sun {
+  display: block;
+}
+
+.toggle-thumb i.fa-moon {
+  display: none;
+}
+
+.toggle-switch.active {
+  background-color: #7e8ef1;
+}
+
+.toggle-switch.active .toggle-thumb {
+  left: 30px;
+  background-color: #333;
+}
+
+.toggle-switch.active .toggle-thumb i.fa-sun {
+  display: none;
+}
+
+.toggle-switch.active .toggle-thumb i.fa-moon {
+  display: block;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
 }
 
 body.dark-mode .navbar {
-  background-color: #333333;
-  color: white;
+  background-color: #222;
+}
+
+body.dark-mode .navbar-menu {
+  background-color: #222;
 }
 
 body.dark-mode .navbar-menu a {
-  color: white;
+  color: #fff;
 }
 
 body.dark-mode .navbar-menu a.active,
-body.dark-mode .navbar-menu a:hover {
-  color: #7e8ef1;
-}
-
-body.dark-mode .navbar-menu .button {
-  background-color: white;
+body.dark-mode .navbar-menu a:hover,
+body.dark-mode a.active-contact {
   color: #7e8ef1;
 }
 
@@ -170,5 +226,5 @@ body.dark-mode .navbar-menu .button:hover {
 }
 
 body.dark-mode .navbar-toggle .bar {
-  background-color: white;
+  background-color: #fff;
 }
