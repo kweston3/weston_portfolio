@@ -125,7 +125,8 @@ main {
 }
 
 .content-section a {
-  color: purple;
+  color: #7e8ef1;
+  margin-right: 5px;
 }
 
 /* Grid Styles */
@@ -200,13 +201,13 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Overlay color and transparency */
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
 /* Grid Item Hover Effect */
 .main-grid-item:hover::before {
-  background: rgba(0, 0, 0, 0.7); /* Darker overlay on hover */
+  background: rgba(0, 0, 0, 0.7);
 }
 
 /* About Quiz Styles */
@@ -397,4 +398,115 @@ form button:hover {
     max-width: 100%;
     max-height: 400px;
   }
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 200px auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.modal-content a {
+  color: #7e8ef1;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .modal-content {
+    width: 90%;
+  }
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+body.dark-mode .header-content .button {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+body.dark-mode form {
+  background-color: #2a2a2a;
+  border-color: #444444;
+}
+
+body.dark-mode form label {
+  color: #ffffff;
+}
+
+body.dark-mode .option-div {
+  background-color: #444444;
+}
+
+body.dark-mode .option-div.correct {
+  background-color: #2e7d32;
+}
+
+body.dark-mode .option-div.incorrect {
+  background-color: #d32f2f;
+}
+
+body.dark-mode #timer {
+  background-color: #333333;
+  border-color: #444444;
+  color: #ffffff;
+}
+
+body.dark-mode .modal-content {
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+body.dark-mode .close-btn {
+  color: #cccccc;
+}
+
+body.dark-mode .resume h2 {
+  color: #ffffff;
+}
+
+body.dark-mode .contact a {
+  color: #7e8ef1;
+}
+
+body.dark-mode .main-grid-item {
+  color: black;
+}
+
+body.dark-mode .main-grid-item::before {
+  background: rgb(255, 255, 255, 0.7);
+}
+
+body.dark-mode .main-grid-item:hover::before {
+  background: rgb(255, 255, 255, 0.8);
 }
