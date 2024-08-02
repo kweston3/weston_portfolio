@@ -64,6 +64,7 @@
           action="POST"
           data-netlify="true"
           netlify-honeypot="bot-field"
+          id="contact-form"
         >
           <input type="hidden" name="form-name" value="contact" />
           <p hidden>
@@ -88,6 +89,10 @@
             <button type="submit">Send</button>
           </p>
         </form>
+        <div id="thank-you" class="thank-you-message" style="display: none">
+          <h2>Thank you for your message!</h2>
+          <p>I will be in touch shortly.</p>
+        </div>
       </div>
     </main>
 

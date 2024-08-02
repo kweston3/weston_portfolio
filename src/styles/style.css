@@ -353,6 +353,10 @@ form button:hover {
   background-color: #5a6dd7;
 }
 
+.thank-you-message h2 {
+  color: #7e8ef1;
+}
+
 /* Projects Styling */
 .project-intro {
   display: flex;
