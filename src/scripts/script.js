@@ -57,22 +57,24 @@ document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contact-form");
   const thankYouMessage = document.getElementById("thank-you");
 
-  form.addEventListener("submit", async function (event) {
-    event.preventDefault();
+  if (form) {
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
 
-    const formData = new FormData(form);
+      const formData = new FormData(form);
 
-    try {
-      await fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString(),
-      });
+      try {
+        await fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData).toString(),
+        });
 
-      form.style.display = "none";
-      thankYouMessage.style.display = "block";
-    } catch (error) {
-      alert("There was a problem with the submission. Please try again.");
-    }
-  });
+        form.style.display = "none";
+        thankYouMessage.style.display = "block";
+      } catch (error) {
+        alert("There was a problem with the submission. Please try again.");
+      }
+    });
+  }
 });
