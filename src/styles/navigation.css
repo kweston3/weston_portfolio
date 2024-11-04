@@ -11,7 +11,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  height: 120px;
+  height: 110px;
   margin-bottom: 100px;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .navbar-logo img {
-  height: 100px;
+  height: 90px;
 }
 
 /* Navbar Menu Styles */
@@ -98,7 +98,7 @@
 }
 
 /* Mobile Styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 875px) {
   .navbar-logo {
     margin-left: 0px;
   }

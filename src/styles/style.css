@@ -82,7 +82,7 @@ main {
   padding: 10px 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 875px) {
   .header {
     flex-direction: column;
     align-items: center;
