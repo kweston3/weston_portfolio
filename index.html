@@ -35,14 +35,14 @@
       </div>
       <ul class="navbar-menu" id="navbar-menu">
         <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="pages/about.html">About</a></li>
+        <li><a href="#about-header">About</a></li>
         <li><a href="pages/portfolio.html">Portfolio</a></li>
-        <li><a href="pages/contact.html" class="button">Contact</a></li>
+        <li><a href="#contact-form" class="button">Contact</a></li>
       </ul>
     </nav>
 
     <main>
-      <div class="header-wrapper">
+      <div class="header-wrapper" id="about-header">
         <header class="header">
           <div class="header-content">
             <h1>Hi, my name is Kaleb Weston.</h1>
@@ -182,6 +182,7 @@
           action="POST"
           data-netlify="true"
           netlify-honeypot="bot-field"
+          id="contact-form"
         >
           <input type="hidden" name="form-name" value="contact" />
           <p hidden>
